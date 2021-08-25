@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: #e0e8ff;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw 50vh;
+}
+body main {
+  width: 100vw;
+  height: 100vh;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-size: 120% 40vh;
+  }
+}
+
+.card {
+  margin: 0 auto;
+  position: relative;
+  top: 16%;
+  width: 375px;
+  height: 600px;
+  background-color: #f5f7ff;
+  border-radius: 20px;
+  box-shadow: 0px 27px 29px -20px rgba(31, 47, 86, 0.4);
+}
+.card img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.card__content h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 900;
+}
+.card__content span {
+  display: block;
+  width: 80%;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.card__plan {
+  width: 80%;
+  height: 70px;
+  margin: 0 auto;
+  background-color: rgba(224, 232, 255, 0.3);
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+  align-items: center;
+  justify-items: center;
+}
+.card__plan img {
+  width: 50px;
+}
+.card__plan ul {
+  list-style: none;
+  justify-self: flex-start;
+}
+.card__plan--select {
+  color: black;
+}
+.card__plan--price {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.card__plan a {
+  color: #3829e0;
+}
+.card__buttons {
+  width: 80%;
+  height: 120px;
+  margin: 25px auto 0;
+}
+.card__buttons ul {
+  list-style: none;
+}
+.card__buttons--proceed {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 900;
+  color: #f5f7ff;
+  background-color: #3829e0;
+  box-shadow: 0px 10px 25px -8px rgba(56, 41, 224, 0.6);
+}
+.card__buttons--proceed:hover {
+  cursor: pointer;
+}
+.card__buttons--cancel {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 900;
+  height: 15px;
+  margin-top: 25px;
+  background-color: #f5f7ff;
+  color: rgba(0, 0, 0, 0.5);
+}
+.card__buttons--cancel:hover {
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=index.css.map */

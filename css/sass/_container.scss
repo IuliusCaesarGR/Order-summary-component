@@ -1,0 +1,98 @@
+body{
+    background-color: $color-primary1;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw 50vh;
+    main {
+        width: 100vw;
+        height: 100vh;
+    }
+    //media queries for mobile
+    @media (min-width: 320px) and (max-width: 425px){
+        background-image: url(/images/pattern-background-mobile.svg);
+        background-size: 120% 40vh;
+    }
+
+}
+.card{
+    margin: 0 auto;
+    position: relative;
+    top: 16%;
+    width: 375px;
+    height: 600px;
+    background-color: $color-neutral1;
+    border-radius: 20px;
+    box-shadow: 0px 27px 29px -20px rgba($color: $color-neutral3, $alpha: .4);
+    img{
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    &__content{
+        h2{
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 900;
+        }
+        span{
+            display: block;
+            width: 80%;
+            text-align: center;
+            margin: 20px auto;
+            font-size: 16px;
+            line-height: 25px;
+            color: rgba($color: $color-dark, $alpha: .5);
+        }
+    }
+    &__plan{
+        width: 80%;
+        height: 70px;
+        margin: 0 auto;
+        background-color: rgba($color: $color-primary1, $alpha: .3);
+        display: grid;
+        grid-template-columns: 80px 1fr 80px;
+        align-items: center;
+        justify-items: center;
+        img{
+            width: 50px;
+        }
+        ul {
+            list-style: none;
+            justify-self: flex-start;
+        }
+        &--select{
+            color: $color-dark;
+        }
+        &--price{
+            font-size: 16px;
+            color: rgba($color: $color-dark, $alpha: .4);
+        }
+        a{
+            color: $color-primary2;
+        }
+    }
+    &__buttons{
+        width: 80%;
+        height: 120px;
+        margin: 25px auto 0;
+        ul{
+            list-style: none;
+        }
+        &--proceed{
+            @include botons;
+            color: $color-neutral1;
+            background-color: $color-primary2;
+            box-shadow: 0px 10px 25px -8px rgba($color: $color-primary2, $alpha: .6);
+            @include hover;
+        }
+        &--cancel{
+            @include botons;
+            height: 15px;
+            margin-top: 25px;
+            background-color: $color-neutral1;
+            color: rgba($color: $color-dark, $alpha: .5);
+            @include hover;
+        }
+    }
+
+}
