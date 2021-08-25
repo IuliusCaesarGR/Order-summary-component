@@ -11,6 +11,9 @@ body{
     @media (min-width: 320px) and (max-width: 425px){
         background-image: url(../images/pattern-background-mobile.svg);
         background-size: 120% 40vh;
+        .card{
+            top: 12%;
+        }
     }
 
 }
@@ -19,7 +22,7 @@ body{
     position: relative;
     top: 16%;
     width: 375px;
-    height: 600px;
+    height: 620px;
     background-color: $color-neutral1;
     border-radius: 20px;
     box-shadow: 0px 27px 29px -29px rgba($color: $color-neutral3, $alpha: .4);
@@ -29,16 +32,17 @@ body{
         border-top-left-radius: 20px;
     }
     &__content{
-        h2{
+        h1{
             text-align: center;
             margin-top: 30px;
-            font-weight: 900;
+            font-weight: 700;
+            color: $color-neutral3;
         }
         span{
             display: block;
             width: 80%;
             text-align: center;
-            margin: 20px auto;
+            margin: 15px auto;
             font-size: 16px;
             line-height: 25px;
             color: rgba($color: $color-dark, $alpha: .5);
@@ -46,7 +50,7 @@ body{
     }
     &__plan{
         width: 80%;
-        height: 70px;
+        height: 85px;
         margin: 0 auto;
         border-radius: 10px;
         background-color: rgba($color: $color-primary1, $alpha: .3);
@@ -70,6 +74,7 @@ body{
         }
         a{
             color: $color-primary2;
+            font-size: 13px;
         }
     }
     &__buttons{
@@ -80,6 +85,7 @@ body{
             list-style: none;
         }
         &--proceed{
+            margin-top: 5px;
             @include botons;
             color: $color-neutral1;
             background-color: $color-primary2;
@@ -89,7 +95,7 @@ body{
         &--cancel{
             @include botons;
             height: 15px;
-            margin-top: 25px;
+            margin-top: 28px;
             background-color: $color-neutral1;
             color: rgba($color: $color-dark, $alpha: .5);
             @include hover;
