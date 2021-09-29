@@ -44,6 +44,7 @@ body main {
 .card__content h1 {
   text-align: center;
   margin-top: 30px;
+  font-size: 32px;
   font-weight: 700;
   color: #1f2f56;
 }
